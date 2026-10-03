@@ -1,1 +1,1 @@
-# insurance_choice_assistant
+# insurance-choice-assistant

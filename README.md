@@ -1,1 +1,1 @@
-# insurance-choice-assistant
+# insurance-recommendation-assistant

@@ -4,7 +4,7 @@ An evidence-grounded health insurance advisor. It collects a user's answers, com
 
 ## TO RUN
 
-Add the `README.md` as a skill for your agent of choice (in our case we used GPT 5.4), run the skill, and complete the questionnaire.
+Add the `health_insurance_recomender/README.md` as a skill for your agent of choice (in our case we used GPT 5.4), run the skill, and complete the questionnaire.
 
 ## What's in this repo
 

@@ -1,0 +1,159 @@
+{
+  "status": "recommendation",
+  "summary": "Recommend Transit Silver Value because it had the strongest overall score for this user's cost, access, and fit profile.",
+  "sources": {
+    "S1": {
+      "path": "examples/user_answers_complete.json",
+      "kind": "user_answers"
+    },
+    "S2": {
+      "path": "data/sample_plan_catalog.json",
+      "kind": "plan_data"
+    },
+    "S3": {
+      "path": "examples/output_complete/scoring.json",
+      "kind": "scoring_output"
+    }
+  },
+  "evidence": {
+    "u1": {
+      "type": "source",
+      "source": "S1",
+      "about": "user",
+      "fact": "age",
+      "value": 34,
+      "quote": "{\"age\": 34}"
+    },
+    "u2": {
+      "type": "source",
+      "source": "S1",
+      "about": "user",
+      "fact": "income",
+      "value": 42000,
+      "quote": "{\"income\": 42000}"
+    },
+    "p1": {
+      "type": "source",
+      "source": "S2",
+      "about": "Transit Silver Value",
+      "fact": "premium",
+      "value": 395.0,
+      "json_path": "[top_plan_by_id].premium"
+    },
+    "p2": {
+      "type": "source",
+      "source": "S2",
+      "about": "Transit Silver Value",
+      "fact": "deductible",
+      "value": 3100.0,
+      "json_path": "[top_plan_by_id].deductible"
+    },
+    "p3": {
+      "type": "source",
+      "source": "S2",
+      "about": "Transit Silver Value",
+      "fact": "moop",
+      "value": 7200.0,
+      "json_path": "[top_plan_by_id].moop"
+    },
+    "s1": {
+      "type": "source",
+      "source": "S3",
+      "about": "Transit Silver Value",
+      "fact": "composite_score",
+      "value": 0.815,
+      "json_path": "scored_plans[0].composite_score"
+    },
+    "s2": {
+      "type": "source",
+      "source": "S3",
+      "about": "Transit Silver Value",
+      "fact": "expected_yearly_cost",
+      "value": 6215.0,
+      "json_path": "scored_plans[0].expected_yearly_cost"
+    }
+  },
+  "ranking": {
+    "direction": "higher_is_better",
+    "considered": [
+      {
+        "plan": "Transit Silver Value",
+        "basis": "rank=1"
+      },
+      {
+        "plan": "North Metro Silver Access",
+        "basis": "rank=2"
+      },
+      {
+        "plan": "Low Premium Bronze Basic",
+        "basis": "rank=3"
+      }
+    ]
+  },
+  "recommendations": [
+    {
+      "rank": 1,
+      "plan": "Transit Silver Value",
+      "headline": "Best overall fit",
+      "reasons": [
+        {
+          "text": "Composite score is 0.815, the highest among matched plans.",
+          "label": "fact",
+          "evidence": [
+            "s1"
+          ]
+        },
+        {
+          "text": "Expected yearly cost is $6,215.",
+          "label": "fact",
+          "evidence": [
+            "s2"
+          ]
+        },
+        {
+          "text": "Premium is $395 per month with a $7,200 MOOP.",
+          "label": "fact",
+          "evidence": [
+            "p1",
+            "p3"
+          ]
+        }
+      ],
+      "tradeoffs": [
+        {
+          "text": "Deductible is $3,100.",
+          "label": "fact",
+          "evidence": [
+            "p2"
+          ]
+        },
+        {
+          "text": "Network type is EPO.",
+          "label": "judgment",
+          "evidence": [
+            "s1"
+          ]
+        }
+      ]
+    }
+  ],
+  "stability": {
+    "status": "unstable",
+    "evidence": [
+      "s1"
+    ]
+  },
+  "assumptions": [],
+  "gaps": [],
+  "uncertainty": [
+    {
+      "topic": "ranking stability",
+      "unknown": "Runner-up North Metro Silver Access scored 0.792 versus 0.815 for the top plan.",
+      "impact": "A small gap means the recommendation could change if preferences or missing details change.",
+      "resolve": "Clarify must-keep providers, exact medications, and budget tolerance."
+    }
+  ],
+  "confidence": {
+    "level": "medium"
+  }
+}

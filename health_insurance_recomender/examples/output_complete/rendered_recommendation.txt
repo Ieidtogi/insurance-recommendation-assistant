@@ -1,0 +1,10 @@
+Recommend Transit Silver Value because it had the strongest overall score for this user's cost, access, and fit profile.
+Confidence: MEDIUM.
+1. Transit Silver Value — Best overall fit
+- Composite score is 0.815, the highest among matched plans.
+- Expected yearly cost is $6,215.
+- Premium is $395 per month with a $7,200 MOOP.
+- Tradeoff: Deductible is $3,100.
+- Tradeoff: Network type is EPO.
+What I'm not sure about:
+- ranking stability: Runner-up North Metro Silver Access scored 0.792 versus 0.815 for the top plan.

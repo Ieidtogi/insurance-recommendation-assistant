@@ -1,0 +1,131 @@
+{
+  "client_profile": {
+    "demographics": {
+      "age": 34,
+      "sex_assigned_at_birth": "female"
+    },
+    "household": {
+      "household_size": 1,
+      "spouse_partner_status": null,
+      "dependents": []
+    },
+    "geography": {
+      "state": "MN",
+      "county": "Hennepin",
+      "zip_code": "55408",
+      "market": "ACA_INDIVIDUAL",
+      "public_transport_dependency": true,
+      "travel_limit_miles": 8
+    },
+    "financial_constraints": {
+      "income": 42000,
+      "monthly_premium_budget": 430,
+      "deductible_preference": "moderate",
+      "copay_predictability_preference": "high"
+    },
+    "employment_and_occupation": {
+      "employment_status": "self_employed",
+      "occupation": "freelance designer",
+      "shift_work": false,
+      "travel_frequency": "low"
+    },
+    "health_status": {
+      "chronic_conditions": [
+        "asthma",
+        "anxiety"
+      ],
+      "planned_care_next_12_months": [],
+      "pregnancy_family_planning": false
+    },
+    "care_utilization": {
+      "expected_care_usage": "moderate",
+      "primary_care_visits_per_year": 3,
+      "specialist_visits_per_year": 2,
+      "therapy_visits_per_year": 12
+    },
+    "medications": {
+      "current_medications": [
+        "albuterol",
+        "sertraline"
+      ],
+      "preferred_pharmacy": "Transit Pharmacy Hennepin",
+      "specialty_drug_dependency": false
+    },
+    "mental_behavioral_health": {
+      "therapy_priority": true,
+      "psychiatry_priority": false,
+      "telehealth_preference": true
+    },
+    "lifestyle": {
+      "tobacco_use": false
+    },
+    "provider_preferences": {
+      "preferred_doctors": [
+        "Dr. Lee"
+      ],
+      "preferred_hospitals": [
+        "Hennepin Health Center"
+      ],
+      "must_keep_providers": false
+    },
+    "insurance_preferences": {
+      "network_preference": "broad",
+      "low_premium_priority": false,
+      "low_total_cost_priority": true,
+      "unacceptable_tradeoffs": [
+        "very high deductible",
+        "poor mental health access"
+      ]
+    },
+    "eligibility_context": {
+      "employer_offer": false,
+      "cobra_available": false,
+      "medicare_eligible": false,
+      "medicaid_possible": false
+    }
+  },
+  "derived_features": {
+    "estimated_care_intensity": "moderate",
+    "medication_dependency": "moderate",
+    "network_dependency": "high",
+    "mental_health_service_dependency": "high",
+    "financial_fragility": "moderate",
+    "catastrophic_cost_sensitivity": "moderate",
+    "preference_for_low_fixed_cost": "moderate",
+    "preference_for_cost_predictability": "high",
+    "occupational_health_stress": "moderate",
+    "environmental_access_risk": "high",
+    "family_coverage_complexity": "low"
+  },
+  "stated_priorities": [
+    "reasonable total yearly cost",
+    "good mental health access",
+    "easy transit access to care"
+  ],
+  "known_constraints": [
+    "must consider care access without relying on a car",
+    "medications need formulary review"
+  ],
+  "missing_critical_info": [],
+  "assumptions_used": [],
+  "followup_questions_asked": [
+    "What monthly premium range feels affordable?",
+    "Do you rely on public transportation?"
+  ],
+  "followup_questions_still_recommended": [
+    "Are your preferred doctors essential to keep, or just preferred?"
+  ],
+  "preference_weight_seed": {
+    "affordability_weight": 0.0806,
+    "expected_total_cost_weight": 0.1855,
+    "catastrophic_protection_weight": 0.0806,
+    "provider_network_weight": 0.1935,
+    "formulary_drug_fit_weight": 0.1613,
+    "mental_health_access_weight": 0.121,
+    "flexibility_weight": 0.0726,
+    "administrative_simplicity_weight": 0.0403,
+    "preventive_ongoing_care_fit_weight": 0.0645
+  },
+  "profile_confidence": "high",
+  "uncertainty_notes": []
+}

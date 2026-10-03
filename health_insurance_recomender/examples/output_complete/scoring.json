@@ -1,0 +1,76 @@
+{
+  "status": "ok",
+  "ranking_basis": "composite_score",
+  "plans_considered": [
+    "North Metro Silver Access",
+    "Transit Silver Value",
+    "Low Premium Bronze Basic"
+  ],
+  "scored_plans": [
+    {
+      "rank": 1,
+      "plan_id": "MN002-SIL-02",
+      "plan_name": "Transit Silver Value",
+      "issuer_name": "CommunityCare MN",
+      "state": "MN",
+      "county": "Hennepin",
+      "premium": 395.0,
+      "deductible": 3100.0,
+      "moop": 7200.0,
+      "expected_yearly_cost": 6215.0,
+      "composite_score": 0.815,
+      "network_type": "EPO",
+      "evidence": {
+        "import_date": "2026-09-25",
+        "network_score": 0.72,
+        "formulary_score": 0.88,
+        "hospital_access_score": 0.95
+      }
+    },
+    {
+      "rank": 2,
+      "plan_id": "MN001-SIL-01",
+      "plan_name": "North Metro Silver Access",
+      "issuer_name": "North Metro Health",
+      "state": "MN",
+      "county": "Hennepin",
+      "premium": 420.0,
+      "deductible": 2200.0,
+      "moop": 6900.0,
+      "expected_yearly_cost": 6360.0,
+      "composite_score": 0.792,
+      "network_type": "PPO",
+      "evidence": {
+        "import_date": "2026-09-20",
+        "network_score": 0.84,
+        "formulary_score": 0.78,
+        "hospital_access_score": 0.9
+      }
+    },
+    {
+      "rank": 3,
+      "plan_id": "MN003-BRO-01",
+      "plan_name": "Low Premium Bronze Basic",
+      "issuer_name": "PrairieChoice",
+      "state": "MN",
+      "county": "Hennepin",
+      "premium": 330.0,
+      "deductible": 7200.0,
+      "moop": 9100.0,
+      "expected_yearly_cost": 7200.0,
+      "composite_score": 0.1528,
+      "network_type": "HMO",
+      "evidence": {
+        "import_date": "2026-08-15",
+        "network_score": 0.6,
+        "formulary_score": 0.68,
+        "hospital_access_score": 0.7
+      }
+    }
+  ],
+  "gaps": [],
+  "stability": {
+    "status": "unstable",
+    "top_two_gap_percent": 2.82
+  }
+}

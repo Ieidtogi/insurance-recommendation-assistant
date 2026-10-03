@@ -83,7 +83,7 @@ The output folder gets four files:
 | `decision_record.json` | The recommendation, the evidence behind it, gaps, uncertainty and confidence. |
 | `rendered_recommendation.txt` | The short answer the agent shows you. |
 
-Each stage can also run on its own (`profiling`, `scoring`, `guardrails`). The skill README has the commands.
+Each stage can also run on its own (`profiling`, `scoring`, `guardrails`), the skill README has the commands.
 
 ## Confidence levels
 
